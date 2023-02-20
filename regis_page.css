@@ -1,0 +1,471 @@
+*{
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+}
+
+body {
+    background-color: rgb(221, 191, 140);
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+    height: 5rem;
+    background-color: rgb(164, 143, 107);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.header_logo_section {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.header_logo_section img{
+    height: 3rem;
+    margin-right: 0.3rem;
+}
+
+.logo_words_section {
+    background-color: white;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    padding: 0.2rem;
+}
+
+.beli {
+    background-color: rgb(164, 143, 107);
+    padding: 0 1rem;
+    color: white;
+    font-weight: bold;
+}
+
+.skuy {
+    display: inline-block;
+    padding: 0 1rem;
+    font-weight: bold;
+    color: rgb(164, 143, 107);
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.search_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.search_section input {
+    padding: 0.5rem 1rem;
+    width: 90%;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+}
+
+.nav a {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1.2rem;
+    font-size: 1.1rem;
+    color: rgb(99, 68, 68);
+    font-weight: bold;
+}
+
+.nav a img {
+    height: 1.6rem;
+    margin-right: 0.3rem;
+}
+
+.burger_menu {
+    display: none;
+}
+
+.container {
+    padding: 0 2vw;
+    width: 65vw;
+    display: flex;
+    margin: 8.4vw auto;
+}
+
+.form {
+    background-color: white;
+    width: 45vw;
+    border-top-left-radius: 2vw;
+    border-bottom-left-radius: 2vw;
+    border-top-right-radius: 15vw;
+    border-bottom-right-radius: 1vw;
+}
+
+.form_header {
+    text-align: center;
+    font-size: 1.9vw;
+    padding: 2vw 0;
+}
+
+form {
+    margin: 0 2vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_right_side {
+    width: 15vw;
+    margin-right: 1vw
+}
+
+.input_type {
+    display: flex;
+    width: 20vw;
+    align-items: center;
+    margin-bottom: 1.2vw;
+    border-radius: 4vw;
+    padding: 0.7vw;
+    background-color: beige;
+}
+
+.input_type input {
+    display: block;
+    font-size: 1.2vw;
+    background-color: beige;
+    border: none;
+    padding-right: 0.5vw;
+    width: 20vw;
+}
+
+.input_type input:focus {
+    outline: none;
+}
+
+.input_logo {
+    height: 2vw;
+}
+
+.input_logo img {
+    width: 2vw;
+    height: 2vw;
+    border-radius: 0.5vw;
+    margin-right: 0.5vw;
+}
+
+.logo_section {
+    width: 20vw;
+}
+
+.birthday_section {
+    margin-top: 0.5vw;
+    font-size: 1.2vw;
+}
+
+.birthday_section input {
+    width: 10vw;
+}
+
+.birthday_header {
+    margin-bottom: 0.5vw;
+    color: black;
+}
+
+.gender_section {
+    margin: 1.4vw 0;
+    font-size: 1.2vw;
+}
+
+.gender_header {
+    margin-bottom: 0.5vw;
+}
+
+.gender_section .radio {
+    margin-right: 1vw;
+}
+
+.gender_section .input_select{
+    display: flex;
+    font-size: 1vw;
+}
+
+.checkbox_section {
+    font-size: 0.8vw;
+}
+
+.submit_section {
+    margin-top: 4vw;
+    margin-bottom: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit_section p {
+    text-align: center;
+    width: 8vw;
+    background-color: bisque;
+    padding: 0.8vw 1vw;
+    font-size: 1.2vw;
+    border-radius: 1vw;
+    opacity: 0.7;
+}
+
+.submit_section p:active {
+    position: relative;
+    top: 0.1vw;
+}
+
+.submit_section p:hover {
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.logo_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.logo_upper_part {
+    margin-top: 2vw;
+    text-align: center;
+}
+
+.logo_upper_part img {
+    width: 8vw;
+    margin-bottom: 1.2vw;
+}
+
+.logo_upper_part p {
+    font-size: 1.7vw;
+}
+
+.login_section {
+    text-align: center;
+}
+
+.login_button {
+    margin: 0 auto;
+    margin-bottom: 2.5vw;
+    margin-top: 1vw;
+    text-align: center;
+    width: 5vw;
+    background-color: beige;
+    padding: 0.6vw 0.8vw;
+    font-size: 1.2vw;
+    border-radius: 1.5vw;
+    opacity: 0.7;
+}
+
+.login_button:active {
+    position: relative;
+    top: 0.1vw;
+}
+
+.login_button:hover {
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.footer {
+    background-color: white;
+}
+
+.footer_container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.footer_section {
+    padding: 0 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_menu a {
+    padding: 1.6rem 0.5rem;
+    display: inline-block;
+    color: rgb(99, 68, 68);
+    font-weight: bold;
+}
+
+.footer_menu a:hover {
+    background-color: rgba(164, 143, 107,0.7);
+}
+
+.logo_socmed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_socmed a {
+    text-decoration: none;
+    display: block;
+    margin-right: 1rem;
+}
+
+.logo_socmed a img {
+    height: 2rem;
+    width: 2rem;
+}
+
+.copyright_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(99, 68, 68);
+}
+
+@media screen and (max-width: 1000px) {
+    .header {
+        height: 8vh;
+        padding: 0 1rem;
+    }
+    
+    .header_logo_section {
+        margin-right: 1.5vw;
+    }
+
+    .header_logo_section img{
+        height: 4.5vw;
+        margin-right: 0.5vw;
+    }
+
+    .nav_section a img {
+        margin-right: 0.5vw;
+    }
+
+    .logo_words_section {
+        background-color: white;
+        font-size: 1.8vw;
+        display: flex;
+        align-items: center;
+        padding: 0.3vw;
+    }
+
+    .nav_section a {
+        margin-left: 1.2vw;
+        font-size: 1.5vw;
+    }
+    
+    .nav_section a img {
+        height: 1.6vw;
+    }
+
+    .footer_section {
+        padding: 0 5vw;
+    }
+
+    .footer_menu a {
+        padding: 2vw 1vw;
+        font-size: 1.5vw;
+    }
+
+    .logo_socmed a {
+        margin-right: 1vw;
+    }
+
+    .logo_socmed a img {
+        height: 3.5vw;
+        width: 3.5vw;
+    }
+
+    .copyright_text {
+        font-size: 1.5vw;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .header {
+        height: 6vh;
+    }
+    
+    .search_section input {
+        padding: 0.5vw 1vw;
+        font-size: 2vw;
+        border-radius: 1.6vw;
+    }
+
+    .birthday_section input {
+        font-size: 1.2vw;
+    }
+
+    .gender_section input, .checkbox_section input {
+        width: 0.4rem;
+    }
+
+  }
+
+  @media screen and (max-width: 600px) {
+    .nav a {
+        display: none;
+    }
+
+    .burger_menu {
+        display: block;
+        width: 2vw;
+        height: 2vw;
+        position: relative;
+    }
+
+    .nav_section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav {
+        display: inline-block;
+        background-color: rgb(164, 143, 107);
+        position: absolute;
+        top: 6vh;
+        right: 0.2vw;
+        display: flex;
+        height: 5vh;
+        flex-direction: column;
+    }
+
+    .nav a {
+        display: block;
+        border: 0.1vh beige solid;
+        padding: 0.2vw 0.5vw;
+        display: flex;
+        justify-content: flex-start;
+        width: 10vw;
+        margin-left: 0;
+    }
+
+    .nav a img {
+        margin-right: 1vw;
+        display: flex;
+        justify-content: center;
+        width: 2vw;
+    }
+  }

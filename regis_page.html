@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="regis_page.css">
+</head>
+<body>
+    <div class="header">
+        <a href="./gallery_page.html" class="header_logo_section">
+            <img src="./images/logo3.png" alt="logo">
+            <div class="logo_words_section">
+                <div class="beli">BELI</div>
+                <div class="skuy">SKUY</div>
+            </div>
+        </a>
+
+        <div class="search_section">
+            <input type="text" placeholder="Search..">
+        </div>
+
+        <div class="nav_section">
+            <img id="burger_icon" class="burger_menu" src="https://www.freeiconspng.com/thumbs/menu-icon/menu-icon-24.png" alt="" onclick="show_menu()">
+            <div class="nav">
+                <a id="menu1" href="./cart_page.html" class="nav_cart_section">
+                    <img src="./images/cart_logo.png" alt="">
+                    <p>CART</p>
+                </a>
+                <a id="menu2" href="./chat_page.html" class="nav_chat_section">
+                    <img src="./images/chat_logo.png" alt="">
+                    <p>CHAT</p>
+                </a>
+                <a id="menu3" href="./profile_page.html" class="nav_profile_section">
+                    <img src="./images/profile_logo.png" alt="">
+                    <p>PROFILE</p>
+                </a>
+                <a id="menu4" href="./regis_page.html" class="nav_register_section">
+                    <img src="./images/register_logo.png" alt="">
+                    <p>REGISTER</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="form">
+            <div class="form_header">
+                <p>Register Form</p>
+            </div>
+            <form action="">
+                <div class="form_left_side">
+                    <div class="username_section">
+                        <div class="input_type">
+                            <div class="input_logo">
+                                <img src="https://png.pngtree.com/png-vector/20191018/ourmid/pngtree-user-vector-icon-png-image_1824214.jpg" alt="">
+                            </div>
+                            <input type="username" class="username" id="username" placeholder="username">
+                        </div>
+                    </div>
+                    <div class="email_section">
+                        <div class="input_type">
+                            <div class="input_logo">
+                                <img src="https://static.vecteezy.com/system/resources/thumbnails/006/827/459/small/email-icon-sign-symbol-logo-vector.jpg" alt="">
+                            </div>
+                            <input type="email" name="email" id="email" placeholder="email">
+                        </div>
+                    </div>
+                    <div class="password_section">
+                        <div class="password">
+                            <div class="input_type">
+                                <div class="input_logo">
+                                    <img src="https://thumbs.dreamstime.com/b/lock-icon-unlock-open-lock-padlock-symbol-password-black-private-sign-isolated-white-background-closed-lock-code-safety-s-lock-193140306.jpg" alt="">
+                                </div>
+                                <input type="password" id="password" placeholder="password">
+                            </div>
+                            <div class="re_enter_password">
+                                <div class="input_type">
+                                    <div class="input_logo">
+                                        <img src="https://thumbs.dreamstime.com/b/lock-icon-unlock-open-lock-padlock-symbol-password-black-private-sign-isolated-white-background-closed-lock-code-safety-s-lock-193140306.jpg" alt="">
+                                    </div>
+                                    <input type="password" id="re_enter_password" placeholder="confirm password">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_right_side">
+                    <div class="birthday_section">
+                        <p class="birthday_header">Date of Birth</p>
+                        <input type="date" id="birthday" name="birthday">
+                    </div>
+                    <div class="gender_section">
+                        <p class="gender_header">Gender</p>
+                        <div class="input_select">
+                            <div class="radio">
+                                <input type="radio" name="gender" id="male">
+                                <label for="male">Male</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="gender" id="female">
+                                <label for="female">Female</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkbox_section">
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                        <label for="checkbox">I agree to BeliSkuy's Terms and Conditions</label>
+                    </div>
+                    <div class="submit_section" onclick="formValidation()">
+                        <p>Submit</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="logo_section">
+            <div class="logo_container">
+                <div class="logo_upper_part">
+                    <img src="./images/logo2.png" alt="">
+                    <p>Register Your Account</p>
+                </div>
+                <div class="login_section">
+                    <p>Already Have Account?</p>
+                    <p class="login_button">Login</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer_container">
+            <div class="footer_section">
+                <div class="footer_menu">
+                    <a href="#"><p>ABOUT US</p></a>
+                    <a href="#"><p>HELP</p></a>
+                    <a href="#"><p>CONTACT</p></a>
+                    <a href="#"><p>MEMBERSHIP</p></a>
+                </div>
+        
+                <div class="logo_socmed">
+                    <a href="#">
+                        <img src="./images/tik-tok_logo.png" height="40px" alt="tiktok">
+                    </a>
+                    <a href="#">
+                        <img src="./images/twitter_logo.png" height="40px" alt="twitter">
+                    </a>
+                    <a href="#">
+                        <img src="./images/ig_logo.png" height="40px" alt="instagram">
+                    </a>
+                    <a href="#">
+                        <img src="./images/fb_logo.png" height="40px" alt="facebook">
+                    </a>
+                    <a href="#">
+                        <img src="./images/youtube_logo.png" height="40px" alt="youtube">
+                    </a>
+                </div>
+        
+                <div class="copyright_text">
+                    <p>Copyright © BELISKUY</p>
+                    <p>All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./burger_menu.js"></script>
+
+    <script src="./regis_page.js"></script>
+</body>
+</html> 

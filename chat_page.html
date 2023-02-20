@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="chat_page.css">
+</head>
+<body>
+
+    <div class="header">
+        <a href="./gallery_page.html" class="header_logo_section">
+            <img src="./images/logo3.png" alt="logo">
+            <div class="logo_words_section">
+                <div class="beli">BELI</div>
+                <div class="skuy">SKUY</div>
+            </div>
+        </a>
+
+        <div class="search_section">
+            <input type="text" placeholder="Search..">
+        </div>
+
+        <div class="nav_section">
+            <img id="burger_icon" class="burger_menu" src="https://www.freeiconspng.com/thumbs/menu-icon/menu-icon-24.png" alt="" onclick="show_menu()">
+            <div class="nav">
+                <a id="menu1" href="./cart_page.html" class="nav_cart_section">
+                    <img src="./images/cart_logo.png" alt="">
+                    <p>CART</p>
+                </a>
+                <a id="menu2" href="./chat_page.html" class="nav_chat_section">
+                    <img src="./images/chat_logo.png" alt="">
+                    <p>CHAT</p>
+                </a>
+                <a id="menu3" href="./profile_page.html" class="nav_profile_section">
+                    <img src="./images/profile_logo.png" alt="">
+                    <p>PROFILE</p>
+                </a>
+                <a id="menu4" href="./regis_page.html" class="nav_register_section">
+                    <img src="./images/register_logo.png" alt="">
+                    <p>REGISTER</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="chat_section">
+            <div class="message_section">
+                <div class="message_header_section">
+                    <div class="message_header_photo">
+                        <img src="https://img.freepik.com/free-photo/happy-successful-manager-holding-glasses_74855-2313.jpg?auto=format&h=200" alt="">
+                    </div>
+                    <div class="name_online_status">
+                        <div class="message_header_name">Diana</div>
+                        <div class="online_status">Online</div>
+                    </div>
+                    <div class="message_header_online_status"></div>
+                </div>
+                <div class="message_content">
+                    <div class="chat_bubble_user">
+                        <p>Selamat siang</p>
+                    </div>
+                    <div class="chat_bubble_admin">
+                        <div class="chat_photo">
+                            <img src="https://img.freepik.com/free-photo/happy-successful-manager-holding-glasses_74855-2313.jpg?auto=format&h=200" alt="">
+                        </div>
+                        <p>Selamat siang</p>
+                    </div>
+                    <div class="chat_bubble_admin">
+                        <div class="chat_photo">
+                            <img src="https://img.freepik.com/free-photo/happy-successful-manager-holding-glasses_74855-2313.jpg?auto=format&h=200" alt="">
+                        </div>
+                        <p>Adakah ada yang bisa saya bantu?</p>
+                    </div>
+                </div>
+                <div class="message_send_section">
+                    <div class="message_plus_sign">+</div>
+                    <input class="type_input" type="text" placeholder="Write your message..">
+                    <div class="send_button">Send</div>
+                </div>
+            </div>
+            <!-- <div class="contact_Section">
+                <div class="admin_section">
+                    <div class="admin_photo_section">
+                        <img src="https://img.freepik.com/free-photo/happy-successful-manager-holding-glasses_74855-2313.jpg?auto=format&h=200" alt="">
+                    </div>
+                    <div class="admin_words_section">
+                        <div class="admin_name_section">Diana</div>
+                        <div class="admin_description_section">
+                            <div class="admin_job">Admin</div>
+                            <div class="admin_online_status">Online</div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer_container">
+            <div class="footer_section">
+                <div class="footer_menu">
+                    <a href="#"><p>ABOUT US</p></a>
+                    <a href="#"><p>HELP</p></a>
+                    <a href="#"><p>CONTACT</p></a>
+                    <a href="#"><p>MEMBERSHIP</p></a>
+                </div>
+        
+                <div class="logo_socmed">
+                    <a href="#">
+                        <img src="./images/tik-tok_logo.png" height="40px" alt="tiktok">
+                    </a>
+                    <a href="#">
+                        <img src="./images/twitter_logo.png" height="40px" alt="twitter">
+                    </a>
+                    <a href="#">
+                        <img src="./images/ig_logo.png" height="40px" alt="instagram">
+                    </a>
+                    <a href="#">
+                        <img src="./images/fb_logo.png" height="40px" alt="facebook">
+                    </a>
+                    <a href="#">
+                        <img src="./images/youtube_logo.png" height="40px" alt="youtube">
+                    </a>
+                </div>
+        
+                <div class="copyright_text">
+                    <p>Copyright © BELISKUY</p>
+                    <p>All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./burger_menu.js"></script>
+</html>

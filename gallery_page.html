@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./gallery_page.css">
+</head>
+<body>
+    <div class="header">
+        <a href="./gallery_page.html" class="header_logo_section">
+            <img src="./images/logo3.png" alt="logo">
+            <div class="logo_words_section">
+                <div class="beli">BELI</div>
+                <div class="skuy">SKUY</div>
+            </div>
+        </a>
+
+        <div class="search_section">
+            <input type="text" placeholder="Search..">
+        </div>
+
+        <div class="nav_section">
+            <img id="burger_icon" class="burger_menu" src="https://www.freeiconspng.com/thumbs/menu-icon/menu-icon-24.png" alt="" onclick="show_menu()">
+            <div class="nav">
+                <a id="menu1" href="./cart_page.html" class="nav_cart_section">
+                    <img src="./images/cart_logo.png" alt="">
+                    <p>CART</p>
+                </a>
+                <a id="menu2" href="./chat_page.html" class="nav_chat_section">
+                    <img src="./images/chat_logo.png" alt="">
+                    <p>CHAT</p>
+                </a>
+                <a id="menu3" href="./profile_page.html" class="nav_profile_section">
+                    <img src="./images/profile_logo.png" alt="">
+                    <p>PROFILE</p>
+                </a>
+                <a id="menu4" href="./regis_page.html" class="nav_register_section">
+                    <img src="./images/register_logo.png" alt="">
+                    <p>REGISTER</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main_content">
+        <div class="slide_animation_section">
+            <div class="container">
+                <div class="slide">
+                    <div>
+                        <img id="prev_icon" src="./images/next_page_icon.png" alt="">
+                    </div>
+                    <div class="about_web_section effect">
+                        <div class="background_section"></div>
+                        <div class="words_section">
+                            <p>BELI SKUY <span>is a</span> LOCAL BRAND</p>
+                            <p><span>that</span> REVOLVES <span>in</span></p>
+                            <p><span>everyday fashion that is</span></p>
+                            <p>STYLISH <span>and</span> AFFORDABLE</p>
+                        </div>
+            
+                        <div class="logo_section">
+                            <img src="./images/logo1.png" alt="">
+                        </div>
+                    </div>
+                    
+                     <div class="discount_section effect">
+                        <video autoplay loop>
+                            <source src="./videos/confetti_gif.mp4" type="video/mp4">
+                        </video>
+                        <img src="./images/discount_icon.png" alt="">
+                    </div>
+
+                    <div class="event_section effect">
+                        <img src="./images/event_icon.png" alt="">
+                    </div>
+                    
+                    <div>
+                        <img id="next_icon" src="./images/next_page_icon.png" id="next_icon" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="category_section">
+            <div class="container">
+                <div class="category_list">
+                    <div class="all_category_section category">
+                        <img src="./images//all_icon.png" alt="">
+                        <p>All</p>
+                    </div>
+                    <div class="clothes_category_section category">
+                        <img src="./images//clothes_icon.jpg" alt="">
+                        <p>Clothes</p>
+                    </div>
+                    <div class="pants_category_section category">
+                        <img src="./images//pants_icon.jpg" alt="">
+                        <p>Pants</p>
+                    </div>
+                    <div class="shoes_category_section category">
+                        <img src="./images//shoes_icon.png" alt="">
+                        <p>Shoes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer_container">
+            <div class="footer_section">
+                <div class="footer_menu">
+                    <a href="#"><p>ABOUT US</p></a>
+                    <a href="#"><p>HELP</p></a>
+                    <a href="#"><p>CONTACT</p></a>
+                    <a href="#"><p>MEMBERSHIP</p></a>
+                </div>
+        
+                <div class="logo_socmed">
+                    <a href="#">
+                        <img src="./images/tik-tok_logo.png" height="40px" alt="tiktok">
+                    </a>
+                    <a href="#">
+                        <img src="./images/twitter_logo.png" height="40px" alt="twitter">
+                    </a>
+                    <a href="#">
+                        <img src="./images/ig_logo.png" height="40px" alt="instagram">
+                    </a>
+                    <a href="#">
+                        <img src="./images/fb_logo.png" height="40px" alt="facebook">
+                    </a>
+                    <a href="#">
+                        <img src="./images/youtube_logo.png" height="40px" alt="youtube">
+                    </a>
+                </div>
+        
+                <div class="copyright_text">
+                    <p>Copyright © BELISKUY</p>
+                    <p>All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+
+<script src="./burger_menu.js"></script>
+
+<script src="./jquery-3.6.3.min.js"></script>
+<script src="./gallery_page.js"></script>
+</html>

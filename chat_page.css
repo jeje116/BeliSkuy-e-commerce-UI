@@ -1,0 +1,527 @@
+* {
+    padding: 0;
+    margin: 0;
+    border-spacing: 0;
+}
+
+body {
+    background-color: rgb(221, 191, 140);
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+    height: 5rem;
+    background-color: rgb(164, 143, 107);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.header_logo_section {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.header_logo_section img{
+    height: 3rem;
+    margin-right: 0.3rem;
+}
+
+.logo_words_section {
+    background-color: white;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    padding: 0.2rem;
+}
+
+.beli {
+    background-color: rgb(164, 143, 107);
+    padding: 0 1rem;
+    color: white;
+    font-weight: bold;
+}
+
+.skuy {
+    display: inline-block;
+    padding: 0 1rem;
+    font-weight: bold;
+    color: rgb(164, 143, 107);
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.search_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.search_section input {
+    padding: 0.5rem 1rem;
+    width: 90%;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+}
+
+.nav a {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1.2rem;
+    font-size: 1.1rem;
+    color: rgb(99, 68, 68);
+    font-weight: bold;
+}
+
+.nav a img {
+    height: 1.6rem;
+    margin-right: 0.3rem;
+}
+
+.burger_menu {
+    display: none;
+}
+
+.container {
+    max-width: 80rem;
+    margin: 4rem auto;
+}
+
+.chat_section {
+    display: flex;
+    padding: 0 1vw;
+}
+
+.message_section {
+    width: 100%;
+    background-color: aliceblue;
+    padding: 0 2rem;
+}
+
+.message_header_section {
+    display: flex;
+    align-items: center;
+    border-bottom: 0.1rem black solid;
+    margin-top: 1vw;
+    padding: 0.8vw 0;
+}
+
+.message_header_photo {
+    margin-right: 1rem;
+}
+
+.message_header_photo img {
+    border: 0.1rem black solid;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    object-position: 80%;
+}
+
+.message_header_name {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.message_header_online_status {
+    background-color: yellowgreen;
+    padding: 0.3rem;
+    border-radius: 50%;
+}
+
+.online_status {
+    display: flex;
+    font-size: 0.8rem;
+}
+
+.message_content {
+    margin-top: 1rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.chat_bubble_user {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+
+.chat_bubble_user p {
+    padding: 0.5rem 0.8rem;
+    background-color: dodgerblue;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
+
+.chat_bubble_admin {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+.chat_bubble_admin p {
+    padding: 0.5rem 0.8rem;
+    background-color: dodgerblue;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+}
+
+.chat_photo img {
+    border: 0.1rem black solid;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
+    object-position: 80%;
+    position: relative;
+    top: 1rem;
+}
+
+.message_send_section {
+    border-top: 0.1rem black solid;
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.message_plus_sign {
+    padding: 0.35rem 0.6rem;
+    background-color: lightblue;
+    border-radius: 45%;
+    margin-right: 0.8rem;
+    font-weight: bold;
+}
+
+.message_plus_sign:hover {
+    cursor: pointer;
+}
+
+.message_plus_sign:active {
+    position: relative;
+    top: 0.1rem;
+}
+
+.type_input {
+    width: 90%;
+    padding: 0.4rem 0.6rem;
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+
+.send_button {
+    background-color: rgb(3, 189, 3);
+    padding: 0.5rem 0.6rem;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    color: white;
+}
+
+.send_button:hover {
+    cursor: pointer;
+}
+
+.send_button:active {
+    position: relative;
+    top: 0.1rem;
+}
+
+.footer {
+    background-color: white;
+}
+
+.footer_container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.footer_section {
+    padding: 0 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_menu a {
+    padding: 1.6rem 0.5rem;
+    display: inline-block;
+    color: rgb(99, 68, 68);
+    font-weight: bold;
+}
+
+.footer_menu a:hover {
+    background-color: rgba(164, 143, 107,0.7);
+}
+
+.logo_socmed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_socmed a {
+    text-decoration: none;
+    display: block;
+    margin-right: 1rem;
+}
+
+.logo_socmed a img {
+    height: 2rem;
+    width: 2rem;
+}
+
+.copyright_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(99, 68, 68);
+}
+
+@media screen and (max-width: 1000px) {
+    .header {
+        height: 8vh;
+        padding: 0 1rem;
+    }
+    
+    .header_logo_section {
+        margin-right: 1.5vw;
+    }
+
+    .header_logo_section img{
+        height: 4.5vw;
+        margin-right: 0.5vw;
+    }
+
+    .nav_section a img {
+        margin-right: 0.5vw;
+    }
+
+    .logo_words_section {
+        background-color: white;
+        font-size: 1.8vw;
+        display: flex;
+        align-items: center;
+        padding: 0.3vw;
+    }
+
+    .nav_section a {
+        margin-left: 1.2vw;
+        font-size: 1.5vw;
+    }
+    
+    .nav_section a img {
+        height: 1.6vw;
+    }
+
+    .footer_section {
+        padding: 0 5vw;
+    }
+
+    .footer_menu a {
+        padding: 2vw 1vw;
+        font-size: 1.5vw;
+    }
+
+    .logo_socmed a {
+        margin-right: 1vw;
+    }
+
+    .logo_socmed a img {
+        height: 3.5vw;
+        width: 3.5vw;
+    }
+
+    .copyright_text {
+        font-size: 1.5vw;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .header {
+        height: 6vh;
+    }
+    
+    .search_section input {
+        padding: 0.5vw 1vw;
+        font-size: 2vw;
+        border-radius: 1.6vw;
+    }
+    
+    .message_header_photo {
+        margin-right: 1.3vw;
+    }
+    
+    .message_header_photo img {
+        width: 3rem;
+        height: 3rem;
+        object-fit: cover;
+        object-position: 80%;
+    }
+    
+    .message_header_name {
+        font-size: 1.3rem;
+        margin-right: 0.6rem;
+    }
+    
+    .message_header_online_status {
+        padding: 0.3rem;
+    }
+    
+    .online_status {
+        font-size: 0.7rem;
+    }
+    
+    .message_content {
+        height: 28rem;
+    }
+    
+    .chat_photo img {
+        width: 1.8rem;
+        height: 1.8rem;
+        top: 0.8rem;
+    }
+
+    .message_send_section {
+        padding: 1.3rem 0;
+    }
+    
+    .type_input {
+        padding: 0.3rem 0.5rem;
+        font-size: 0.8rem;
+    }
+    
+  }
+
+  @media screen and (max-width: 600px) {
+    .nav a {
+        display: none;
+    }
+
+    .burger_menu {
+        display: block;
+        width: 2vw;
+        height: 2vw;
+        position: relative;
+    }
+
+    .nav_section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav {
+        display: inline-block;
+        background-color: rgb(164, 143, 107);
+        position: absolute;
+        top: 6vh;
+        right: 0.2vw;
+        display: flex;
+        height: 5vh;
+        flex-direction: column;
+    }
+
+    .nav a {
+        display: block;
+        border: 0.1vh beige solid;
+        padding: 0.2vw 0.5vw;
+        display: flex;
+        justify-content: flex-start;
+        width: 10vw;
+        margin-left: 0;
+    }
+
+    .nav a img {
+        margin-right: 1vw;
+        display: flex;
+        justify-content: center;
+        width: 2vw;
+    }
+
+    .message_header_photo {
+        margin-right: 1.1vw;
+    }
+    
+    .message_header_photo img {
+        width: 2.5rem;
+        height: 2.5rem;
+        object-fit: cover;
+        object-position: 80%;
+    }
+    
+    .message_header_name {
+        font-size: 1.1rem;
+        margin-right: 0.4rem;
+    }
+    
+    .message_header_online_status {
+        padding: 0.2rem;
+    }
+    
+    .online_status {
+        font-size: 0.6rem;
+    }
+    
+    .message_content {
+        height: 25rem;
+    }
+
+    .chat_bubble_user p, .chat_bubble_admin p {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.8rem;
+    }
+    
+    .chat_bubble_admin {
+        margin-bottom: 1rem;
+    }
+
+    .chat_photo img {
+        width: 1.6rem;
+        height: 1.6rem;
+        top: 0.7rem;
+    }
+
+    .message_send_section {
+        padding: 1.1rem 0;
+    }
+    
+    .type_input {
+        padding: 0.2rem 0.4rem;
+        font-size: 0.6rem;
+    }
+  }

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart_page.css">
+    <title>Cart Page</title>
+</head>
+<body>
+    <div class="header">
+        <a href="./gallery_page.html" class="header_logo_section">
+            <img src="./images/logo3.png" alt="logo">
+            <div class="logo_words_section">
+                <div class="beli">BELI</div>
+                <div class="skuy">SKUY</div>
+            </div>
+        </a>
+
+        <div class="search_section">
+            <input type="text" placeholder="Search..">
+        </div>
+
+        <div class="nav_section">
+            <img id="burger_icon" class="burger_menu" src="https://www.freeiconspng.com/thumbs/menu-icon/menu-icon-24.png" alt="" onclick="show_menu()">
+            <div class="nav">
+                <a id="menu1" href="./cart_page.html" class="nav_cart_section">
+                    <img src="./images/cart_logo.png" alt="">
+                    <p>CART</p>
+                </a>
+                <a id="menu2" href="./chat_page.html" class="nav_chat_section">
+                    <img src="./images/chat_logo.png" alt="">
+                    <p>CHAT</p>
+                </a>
+                <a id="menu3" href="./profile_page.html" class="nav_profile_section">
+                    <img src="./images/profile_logo.png" alt="">
+                    <p>PROFILE</p>
+                </a>
+                <a id="menu4" href="./regis_page.html" class="nav_register_section">
+                    <img src="./images/register_logo.png" alt="">
+                    <p>REGISTER</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="MyBag_logo_section">
+            <h1>MyBag</h1>
+        </div>
+        <div class="cart_section">
+            <div class="cart_list_section">
+                <div class="list_header_section">
+                    <div class="list_content">
+                        <div class="product">Product</div>
+                        <div class="price">Price</div>
+                        <div class="quantity">Quantity</div>
+                        <div class="total">Total</div>
+                        <div class="edit"> </div>
+                    </div>
+                </div>
+                <div id="list" class="list_section">
+                    <div class="list_content_section">
+                        <div class="list_content">
+                            <div class="product">
+                                <img src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F43%2F40%2F43405dcaf760a222a9d3327feb6a2147b945db84.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]" alt="tank-top-wanita">
+                                <div class="about_product">
+                                    <span class="product_name">
+                                        <h3>Tank Top</h3>
+                                    </span>
+                                    <span class="product_description">
+                                        <p>Size: M</p>
+                                        <p>Color: Black</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div id="price1" class="price">Rp100000</div>
+                            <div class="quantity">
+                                <div class="quantity_content">
+                                    <div id="hover_toggle1" class="quantity_min_sign">
+                                        <p id="min_sign1" onclick="myFunction_minus(id)"">-</p>
+                                    </div>
+                                    <p id="quality_value1" class="quantity_value">1</p>
+                                    <p id="plus_sign1" class="quantity_plus_sign" onclick="myFunction_plus(id)">+</p>
+                                </div>
+                            </div>
+                            <div id="total1" class="total"></div>
+                            <div class="edit">
+                                <div class="edit_content">edit</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_content_section">
+                        <div class="list_content">
+                            <div class="product">
+                                <img src="https://dynamic.zacdn.com/h2hGxgHq6KSOdIwvXfD6BU9qtsg=/fit-in/346x500/filters:quality(90):fill(ffffff)/https://static-id.zacdn.com/p/birkenstock-5907-6499011-3.jpg" alt="sandal-pria">
+                                <div class="about_product">
+                                    <span class="product_name">
+                                        <h3>Birkenstock Sandal</h3>
+                                    </span>
+                                    <span class="product_description">
+                                        <p>Size: 38</p>
+                                        <p>Color: Black</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div id="price2" class="price">Rp1439100</div>
+                            <div class="quantity">
+                                <div class="quantity_content">
+                                    <div id="hover_toggle2" class="quantity_min_sign">
+                                        <p id="min_sign2" onclick="myFunction_minus(id)"">-</p>
+                                    </div>
+                                    <p id="quality_value2" class="quantity_value">1</p>
+                                    <p id="plus_sign2" class="quantity_plus_sign" onclick="myFunction_plus(id)">+</p>
+                                </div>
+                            </div>
+                            <div id="total2" class="total"></div>
+                            <div class="edit">
+                                <div class="edit_content">edit</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_content_section">
+                        <div class="list_content">
+                            <div class="product">
+                                <img src="https://ae01.alicdn.com/kf/Hcf01ea8369ed49f989cee02d960678711/Celana-Jeans-untuk-Wanita-Berpinggang-Tinggi-Baggy-Jeans-Celana-Pakaian-Celana-Wanita-Plus-Ukuran-Wanita-Kain.jpg" alt="jeans-wanita">
+                                <div class="about_product">
+                                    <span class="product_name">
+                                        <h3>Jeans</h3>
+                                    </span>
+                                    <span class="product_description">
+                                        <p>Size: 24</p>
+                                        <p>Color: Blue</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div id="price3" class="price">Rp1000000</div>
+                            <div class="quantity">
+                                <div class="quantity_content">
+                                    <div id="hover_toggle3" class="quantity_min_sign">
+                                        <p id="min_sign3" onclick="myFunction_minus(id)"">-</p>
+                                    </div>
+                                    <p id="quality_value3" class="quantity_value">1</p>
+                                    <p id="plus_sign3" class="quantity_plus_sign" onclick="myFunction_plus(id)">+</p>
+                                </div>
+                            </div>
+                            <div id="total3" class="total"></div>
+                            <div class="edit">
+                                <div class="edit_content">edit</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_content_section">
+                        <div class="list_content">
+                            <div class="product">
+                                <img src="https://id-live-01.slatic.net/p/24f4920dbca2ac481c44a0f648892a86.jpg" alt="kemeja-wanita">
+                                <div class="about_product">
+                                    <span class="product_name">
+                                        <h3>Korean Style Plaided Shirt</h3>
+                                    </span>
+                                    <span class="product_description">
+                                        <p>Size: M</p>
+                                        <p>Color: Beige</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div id="price4" class="price">Rp250000</div>
+                            <div class="quantity">
+                                <div class="quantity_content">
+                                    <div id="hover_toggle4" class="quantity_min_sign">
+                                        <p id="min_sign4" onclick="myFunction_minus(id)"">-</p>
+                                    </div>
+                                    <p id="quality_value4" class="quantity_value">1</p>
+                                    <p id="plus_sign4" class="quantity_plus_sign" onclick="myFunction_plus(id)">+</p>
+                                </div>
+                            </div>
+                            <div id="total4" class="total"></div>
+                            <div class="edit">
+                                <div class="edit_content">edit</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_content_section">
+                        <div class="list_content">
+                            <div class="product">
+                                <img src="https://ae01.alicdn.com/kf/HTB10yCxNwDqK1RjSZSyq6yxEVXaH/Musim-Panas-Wanita-V-Leher-Lengan-Pendek-Lipit-Chic-Dress-Wanita-Elastis-Pinggang-Tipis-Perban-Tali.jpg_Q90.jpg_.webp" alt="dress-wanita">
+                                <div class="about_product">
+                                    <span class="product_name">
+                                        <h3>Dress</h3>
+                                    </span>
+                                    <span class="product_description">
+                                        <p>Size: S</p>
+                                        <p>Color: Pink</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div id="price5" class="price">Rp300000</div>
+                            <div class="quantity">
+                                <div class="quantity_content">
+                                    <div id="hover_toggle5" class="quantity_min_sign">
+                                        <p id="min_sign5" onclick="myFunction_minus(id)"">-</p>
+                                    </div>
+                                    <p id="quality_value5" class="quantity_value">1</p>
+                                    <p id="plus_sign5" class="quantity_plus_sign" onclick="myFunction_plus(id)">+</p>
+                                </div>
+                            </div>
+                            <div id="total5" class="total"></div>
+                            <div class="edit">
+                                <div class="edit_content">edit</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart_payment_section_relative">
+                <div class="cart_payment_section_fixed">
+                    <div class="cart_summary_section">
+                        <div class="cart_summary">
+                            <div class="order_summary_section">Order Summary</div>
+                            <div class="subtotal_section">
+                                Subtotal :
+                                <p id="subtotal"> </p>
+                            </div>
+                            <div class="tax_section">
+                                Tax (10%) : 
+                                <p id="tax"> </p>
+                            </div>
+                            <div class="discount_section">
+                                Discount :
+                                <p id="discount">0</p>
+                            </div>
+                            <div class="total_section">
+                                Total : 
+                                <p id="count">0</p>
+                            </div>
+                        </div>
+                        <div class="check_out_back_shopping">
+                            <div class="back_shopping_section">
+                                Back Shopping
+                            </div>
+                            <div class="check_out_section">
+                                Check out
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="voucher_section">
+                        <div class="voucher_header_section">Voucher</div>
+                        <div class="voucher_plus_sign">+</div>
+                    </div>
+
+                    <div class="payment_section">
+                        <div class="payment_header_section">Payment Methods</div>
+                        <div class="payment">
+                            <img src="https://1000logos.net/wp-content/uploads/2017/05/emblem-Paypal.jpg" alt="">
+                            <img src="https://bimamedia-gurusiana.ap-south-1.linodeobjects.com/91c5307541a803c91d54d05f35a8a464/2020/04/08/l-ovo3e54b3ebb581e84fd93320688103a5ae20200408211300-bimacms.jpg" alt="">
+                            <img src="https://ls-reload.net/images/produk/topup_dana/top-up-dana-2497-kxxm.jpg" alt="">
+                            <img src="https://1.bp.blogspot.com/-I-TUbTPY0Qc/YVvxDrXjmSI/AAAAAAAAV8U/-2CSSoNaA14bl1W7r5dwyQVU99nj7UzWQCLcBGAsYHQ/s0-rw/Visa-2021-Logo-Download-Free-Vector-EPS-vector69.com.webp" alt="">
+                            <img src="https://beritalima.com/wp-content/uploads/2020/07/BCA-Mobile.jpg" alt="">
+                            <img src="https://ls-reload.net/images/produk/topup_dana/top-up-dana-2497-kxxm.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer_container">
+            <div class="footer_section">
+                <div class="footer_menu">
+                    <a href="#"><p>ABOUT US</p></a>
+                    <a href="#"><p>HELP</p></a>
+                    <a href="#"><p>CONTACT</p></a>
+                    <a href="#"><p>MEMBERSHIP</p></a>
+                </div>
+        
+                <div class="logo_socmed">
+                    <a href="#">
+                        <img src="./images/tik-tok_logo.png" height="40px" alt="tiktok">
+                    </a>
+                    <a href="#">
+                        <img src="./images/twitter_logo.png" height="40px" alt="twitter">
+                    </a>
+                    <a href="#">
+                        <img src="./images/ig_logo.png" height="40px" alt="instagram">
+                    </a>
+                    <a href="#">
+                        <img src="./images/fb_logo.png" height="40px" alt="facebook">
+                    </a>
+                    <a href="#">
+                        <img src="./images/youtube_logo.png" height="40px" alt="youtube">
+                    </a>
+                </div>
+        
+                <div class="copyright_text">
+                    <p>Copyright © BELISKUY</p>
+                    <p>All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./cart_page.js"></script>
+</html>
